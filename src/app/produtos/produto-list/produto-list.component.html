@@ -20,7 +20,7 @@
             <td>{{ produto.descricao }}</td>
             <td>{{ produto.preco | currency:'BRL' }}</td>
             <td>
-              <a class="btn btn-primary" title="Editar" href="#">
+              <a class="btn btn-primary" title="Editar" routerLink="/produtos/editar/{{ produto.id }}">
                 <i class="fas fa-edit"></i>
               </a> |
               <a class="btn btn-danger" title="Excluir" href="#">
