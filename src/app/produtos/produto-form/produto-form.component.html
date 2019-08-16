@@ -1,1 +1,27 @@
-<p>produto-form works!</p>
+<div class="card">
+  <div class="card-header" bg-primary text-light>
+
+  </div>
+  <div class="card-body">
+    <form>
+
+      <div class="form-group">
+        <label for="">Nome</label>
+        <input type="text" class="form-control" required minlength="3" />
+      </div>
+
+      <div class="form-group">
+        <label for="">Descrição</label>
+        <textarea class="form-control" rows="3" required minlength="30"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="">Preço</label>
+        <input type="number" class="form-control" required />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Salvar</button>
+      <a class="btn btn-secondary ml-2">Cancelar</a>
+    </form>
+  </div>
+</div>
