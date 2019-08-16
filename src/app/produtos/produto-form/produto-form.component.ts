@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Produto } from '../shared/produto';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-produto-form',
@@ -11,7 +11,7 @@ export class ProdutoFormComponent implements OnInit {
   produto: Produto;
   title: string;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.title = 'Novo produto';
@@ -23,6 +23,7 @@ export class ProdutoFormComponent implements OnInit {
 
   onSubmit() {
     console.log(this.produto);
+    this.router.navigate(['/produtos']);
   }
 
 }
