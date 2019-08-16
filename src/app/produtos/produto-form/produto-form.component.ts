@@ -17,4 +17,8 @@ export class ProdutoFormComponent implements OnInit {
     this.produto = new Produto();
   }
 
+  onSubmit() {
+    console.log(this.produto);
+  }
+
 }
