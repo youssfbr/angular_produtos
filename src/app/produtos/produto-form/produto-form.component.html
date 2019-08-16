@@ -3,7 +3,7 @@
     {{ title }}
   </div>
   <div class="card-body">
-    <form (ngSubmit)="onSubmit()">
+    <form (ngSubmit)="onSubmit()" #form="ngForm">
 
       <div class="form-group">
         <label for="">Nome</label>
@@ -20,7 +20,7 @@
         <input type="number" class="form-control" [(ngModel)]="produto.preco" name="preco" #preco="ngModel" required />
       </div>
 
-      <button type="submit" class="btn btn-primary">Salvar</button>
+      <button type="submit" class="btn btn-primary" [disabled]="!form.form.valid">Salvar</button>
       <a class="btn btn-secondary ml-2">Cancelar</a>
     </form>
   </div>
