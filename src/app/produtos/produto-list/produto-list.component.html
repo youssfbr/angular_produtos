@@ -19,7 +19,14 @@
             <td>{{ produto.nome }}</td>
             <td>{{ produto.descricao }}</td>
             <td>{{ produto.preco | currency:'BRL' }}</td>
-            <td>Editar | Excluir</td>
+            <td>
+              <a class="btn btn-primary" title="Editar" href="#">
+                <i class="fas fa-edit"></i>
+              </a> |
+              <a class="btn btn-danger" title="Excluir" href="#">
+                  <i class="fas fa-trash"></i>
+              </a>
+              Excluir</td>
           </tr>
       </tbody>
     </table>
