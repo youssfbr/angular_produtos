@@ -11,7 +11,7 @@ export class ProdutoService {
   constructor(private http: HttpClient) { }
 
   listar() {
-
+    return this.http.get<Produto[]>(this.URL);
   }
 
   buscar(id: number) {
